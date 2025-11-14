@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Styling Without CSS - Including Background Attribute</title>
+</head>
+<!-- Body with background and text color attributes -->
+<body bgcolor="#f5f5f5" text="#333333" link="#0000ee" vlink="#551a8b" alink="#ff0000">
+    <h1>HTML Styling Without CSS</h1>
+    
+    <h2>1. Background Attribute Examples</h2>
+    
+    <!-- Table with background attribute -->
+    <table border="1" cellpadding="10" width="80%" background="https://via.placeholder.com/400x200/cccccc/969696?text=Table+Background" bgcolor="#e0e0e0">
+        <tr>
+            <td background="https://via.placeholder.com/100x50/ffcccc/969696?text=Cell+BG">Cell with background image</td>
+            <td bgcolor="#ccffcc">Cell with background color</td>
+        </tr>
+    </table>
+    
+    <h2>2. Body Styling Attributes</h2>
+    
+    <p>The entire page has:</p>
+    <ul>
+        <li>Background color (bgcolor="#f5f5f5")</li>
+        <li>Text color (text="#333333")</li>
+        <li>Link color (link="#0000ee")</li>
+        <li>Visited link color (vlink="#551a8b")</li>
+        <li>Active link color (alink="#ff0000")</li>
+    </ul>
+    
+    <p>Example links: <a href="#link1">Regular Link</a> | <a href="#visited">Visited Link</a></p>
+    
+    <h2>3. Text Formatting Tags</h2>
+    
+    <p><b>Bold text</b> using &lt;b&gt; tag</p>
+    <p><strong>Strong importance</strong> using &lt;strong&gt; tag</p>
+    <p><i>Italic text</i> using &lt;i&gt; tag</p>
+    <p><em>Emphasized text</em> using &lt;em&gt; tag</p>
+    <p><u>Underlined text</u> using &lt;u&gt; tag</p>
+    <p><mark>Highlighted text</mark> using &lt;mark&gt; tag</p>
+    <p><small>Smaller text</small> using &lt;small&gt; tag</p>
+    <p><del>Deleted text</del> using &lt;del&gt; tag</p>
+    <p><ins>Inserted text</ins> using &lt;ins&gt; tag</p>
+    <p>Subscript: H<sub>2</sub>O using &lt;sub&gt; tag</p>
+    <p>Superscript: E = mc<sup>2</sup> using &lt;sup&gt; tag</p>
+    
+    <h2>4. Presentational Attributes (Deprecated but still work)</h2>
+    
+    <p align="center">Centered text using align attribute</p>
+    <p align="right">Right-aligned text using align attribute</p>
+    
+    <font size="5" color="red" face="Arial">
+        Text styled with &lt;font&gt; tag (size, color, face attributes)
+    </font>
+    
+    <p><strike>Strikethrough text</strike> using &lt;strike&gt; tag</p>
+    
+    <center>
+        Centered content using &lt;center&gt; tag
+    </center>
+    
+    <h2>5. Table Styling with Background</h2>
+    
+    <table border="2" cellpadding="15" cellspacing="8" width="90%" bgcolor="#ffffff">
+        <caption>Table with extensive styling attributes</caption>
+        <tr bgcolor="#d0e0ff">
+            <th width="30%" background="https://via.placeholder.com/150x30/aaccff/969696?text=Header+BG">Header 1</th>
+            <th width="40%">Header 2</th>
+            <th width="30%">Header 3</th>
+        </tr>
+        <tr>
+            <td align="center" valign="middle" bgcolor="#f0f0f0">Cell 1</td>
+            <td align="right" valign="top" background="https://via.placeholder.com/200x50/ffcc99/969696?text=Cell+Background">Cell 2 with background</td>
+            <td align="left" valign="bottom">Cell 3</td>
+        </tr>
+    </table>
+    
+    <h2>6. Image with Background and Spacing</h2>
+    
+    <img src="https://via.placeholder.com/300x150" 
+         alt="Placeholder image" 
+         width="300" 
+         height="150" 
+         border="3"
+         hspace="25" 
+         vspace="15"
+         align="left">
+    
+    <p>This text wraps around the image using the align attribute. The hspace and vspace attributes add horizontal and vertical space around the image. The table cell behind has a background image.</p>
+    
+    <br clear="all">
+    
+    <h2>7. List Styling Attributes</h2>
+    
+    <ol type="I" start="5">
+        <li>Ordered list with Roman numerals starting from 5</li>
+        <li>Second item</li>
+    </ol>
+    
+    <ul type="square">
+        <li>Unordered list with square bullets</li>
+        <li>Second item</li>
+    </ul>
+    
+    <h2>8. Form Element Styling</h2>
+    
+    <form>
+        <fieldset>
+            <legend>Form with styling attributes</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" size="30" maxlength="50"><br><br>
+            
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" rows="4" cols="40" wrap="hard"></textarea><br><br>
+            
+            <select size="3">
+                <option selected>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select><br><br>
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+    
+    <h2>9. Horizontal Rule Styling</h2>
+    
+    <hr width="50%" size="5" color="blue" align="center">
+    <hr width="80%" size="3" color="green" align="left">
+    
+    <h2>10. Marquee Element (Deprecated)</h2>
+    
+    <marquee behavior="scroll" direction="left" scrollamount="5" width="80%" bgcolor="#ffffcc">
+        This is a scrolling marquee with background color - deprecated but still works
+    </marquee>
+    
+    <h2>11. Complete List of Background-Related Attributes</h2>
+    
+    <table border="1" cellpadding="10" width="100%">
+        <tr bgcolor="#e0e0e0">
+            <th>Attribute</th>
+            <th>Element(s)</th>
+            <th>Purpose</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>background</td>
+            <td>body, table, td, th</td>
+            <td>Sets a background image</td>
+            <td>Deprecated</td>
+        </tr>
+        <tr>
+            <td>bgcolor</td>
+            <td>body, table, tr, td, th</td>
+            <td>Sets background color</td>
+            <td>Deprecated</td>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>body</td>
+            <td>Sets default text color</td>
+            <td>Deprecated</td>
+        </tr>
+        <tr>
+            <td>link</td>
+            <td>body</td>
+            <td>Sets unvisited link color</td>
+            <td>Deprecated</td>
+        </tr>
+        <tr>
+            <td>vlink</td>
+            <td>body</td>
+            <td>Sets visited link color</td>
+            <td>Deprecated</td>
+        </tr>
+        <tr>
+            <td>alink</td>
+            <td>body</td>
+            <td>Sets active link color</td>
+            <td>Deprecated</td>
+        </tr>
+    </table>
+    
+    <h2>Important Notes</h2>
+    
+    <div bgcolor="#fffacd" style="padding: 10px; border: 1px solid #ccc;">
+        <p><strong>Note about the background attribute:</strong></p>
+        <ul>
+            <li>The <code>background</code> attribute accepts image URLs</li>
+            <li>It works on <code>body</code>, <code>table</code>, <code>td</code>, and <code>th</code> elements</li>
+            <li>Images tile/repeat by default (similar to CSS <code>background-repeat: repeat</code>)</li>
+            <li>No control over positioning, sizing, or attachment</li>
+            <li>Completely deprecated in favor of CSS background properties</li>
+        </ul>
+    </div>
+    
+    <p><strong>Modern Alternative:</strong> Use CSS instead:</p>
+    <pre>
+body {
+    background-color: #f5f5f5;
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #333333;
+}
+
+a {
+    color: #0000ee;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:active {
+    color: #ff0000;
+}
+    </pre>
+</body>
+</html>
